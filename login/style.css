@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* nav bar start */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(250, 248, 248, 0.973);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  border-bottom: 1px solid #000;
+  box-shadow: grey;
+}
+.logo-img {
+  height: 10vh;
+}
+/* navbar end */
+@media screen and (min-width: 751px) {
+  body {
+    background-color: rgb(221, 224, 168);
+  }
+  .home {
+    margin: 15% 2% 10% 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1.2fr) 2fr;
+    grid-column-gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("https://www.imageshine.in/uploads/sub_category/Pin-and-White-wave-background-wallpaper-free-download.jpg");
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    margin: 30% 0 10% 0;
+
+    height: 75vh;
+  }
+  .login {
+    order: 2;
+  }
+  .text {
+    order: 1;
+  }
+  .image {
+    display: none;
+  }
+}
+/* login start */
+/* .login {order: 2;
+} */
+
+form {
+  border: 3px solid #f1f1f1;
+}
+.border-round {
+  border-radius: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+pass-check {
+  display: flex;
+  justify-content: space-between;
+}
+button:hover {
+  opacity: 0.8;
+}
+.rem {
+  float: right;
+}
+
+.container {
+  padding: 10px;
+}
+/* .text{
+  order: 1;
+} */
+.all-text {
+  text-align: center;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+/* login end */
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
